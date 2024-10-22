@@ -4,7 +4,7 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 :root{
@@ -40,6 +40,7 @@ header {
     transform: translateY(-100%);
     opacity: 0;
 }
+
 .huge-text {
     font-size: 120px;
     text-transform: uppercase;
@@ -98,8 +99,8 @@ header {
     display: inline-block;
     margin: 0 25px;
     color: var(--text-color);
-    font-size: var(--p-font);
     transition: all .6s ease;
+    font-weight: bold;
 }
 
 .navlist a:hover {
@@ -209,4 +210,76 @@ footer {
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-color);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    text-align: left;
+    transition: background 0.3s;
+}
+.dropdown a:hover {
+    background-color: var(--main-color);
+}
+
+/* For tablets (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navlist {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    /* Adjust other tablet-specific styles here */
+    .huge-text {
+        font-size: 100px;
+    }
+    .content {
+        font-size: 32px;
+    }
+}
+
+/* For phones (less than 769px) */
+@media (max-width: 768px) {
+    .navlist {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+    /* Adjust other phone-specific styles here */
+    .huge-text {
+        font-size: 80px;
+    }
+    .content {
+        font-size: 28px;
+        width: 100%;
+    }
 }

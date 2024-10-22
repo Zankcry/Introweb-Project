@@ -45,69 +45,6 @@ header {
     opacity: 0;
 }
 
-.huge-text {
-    font-size: 100px;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    font-family: "Outfit", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.sub-text {
-    font-weight: bold;
-    margin-top: 5%;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    font-family: "Outfit", sans-serif;
-}
-
-.text {
-    font-weight: 500;
-    margin-top: 5%;
-    font-size: 20px;
-    letter-spacing: 2px;
-    line-height: 1.5;
-    font-family: "Outfit", sans-serif;
-    width: 710px;
-}
-
-.button {
-    margin-top: 25%;
-    background-color: red;
-    color: var(--bg-color);
-    font-weight: bold;
-    font-size: 30px;
-    padding: 22px 40px;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.huge-text-container {
-    position: absolute;
-    top: 200px;
-    left: 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    
-}
-
-.pic {
-    display: flex;
-    position: absolute;
-    width: 40%;
-    height: auto;
-    top: 175%;
-    right: 10%;
-}
-
-.red-text {
-    color: var(--main-color);
-}
-
 .logo {
     display: flex;
     align-items: center;
@@ -145,91 +82,43 @@ header {
     transform: translateY(1px);
 }
 
-section {
-    padding: 0 14%;
-}
-
-.title {
-    font-size: 50px;
-    font-weight: bold;
-    color: #000000;
-    border-left: 10px solid var(--main-color);
-    padding: 10px;
-}
-
-.content {
-    font-size: 35px;
-    color: #000000;
-    margin-top: 10px;
-    line-height: 1.4;
-    width: 420px;
-    padding-left: 23px;
-}
-
-.container {
-    position: absolute;
-    top: 105%;
-    right: 10%;
-    width: 600px;
-}
-
-
-/* card */
-.card-container {
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-    align-items: center;
-    padding: 1000px 20px 20px;
-}
-
-.card {
-    background-color: #333;
-    border-radius: 15px;
-    width: 80%;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-.card img {
-    width: 100px;
-    height: auto;
-}
-.card p {
-    padding-top: 20px;
-    font-size: 17px;
-    margin: 0;
-}
-
-
 /* Contact us */
+.parent-container {
+    display: flex;
+    align-items: flex-start; 
+    margin-left: 150px; 
+    margin-top: 250px;
+}
+
 .container3 {
     text-align: left;
-    margin-top: 250px;
-    margin-left: 150px;
+    width: 75%;
 }
+
+.pic {
+    max-width: 40%; 
+    height: auto;
+    margin-left: -400px;
+    margin-top: 180px;
+}
+
 .container3 h1 {
     color: red;
-    font-size: 18;
+    font-size: 40px;
     font-family: "Outfit", sans-serif;
     font-weight: bold;
 }
 .container3 p {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
-    width: 50%;
+    width: 75%;
     margin-top: 20px;
     font-family: "Outfit", sans-serif;
     margin-bottom: 50px;
 }
 .input-container {
     margin: 20px 0;
-    width: 50%;
+    width: 75%;
 }
 input, textarea {
     font-family: "Outfit", sans-serif;
@@ -253,6 +142,7 @@ footer {
     text-align: center;
     margin-top: 250px;
 }
+
 .logo1 {
     margin-bottom: -60px;
 }
@@ -266,16 +156,145 @@ footer {
     line-height: 1.6;
     margin-top: 80px;
     margin-bottom: 5%;
-    font-family: "Outfit", sans-serif;
 }
 
+/* Yung page ba */
+.container {
+    display: flex;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+.bgb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+}
+.left-panel{
+    margin: 10px;
+}
+.left-panel {
+    flex: 1;
+    text-align: center;
+}
+.left-panel img {
+    width: 100%;
+    border-radius: 25px;
+}
+.left-panel .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.left-panel .info div {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.left-panel .info .days {
+    background: red;
+}
+.left-panel .info .time {
+    background: gray;
+}
+.left-panel .motivation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.motivation p {
+    margin-top: 15px;
+}
+.right-panel {
+    flex: 2;
+    padding: 20px;
+    position: relative;
+}
+.right-panel h1 {
+    margin-top: 0;
+}
+.right-panel .tabs {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    padding: 20px;
+}
+.right-panel .tabs div {
+    background: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.right-panel .workout {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.right-panel .workout img {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.right-panel .workout .details {
+    flex: 1;
+}
+.right-panel .workout .details h3 {
+    margin: 0;
+}
+.right-panel .workout .details p {
+    margin: 5px 0 0;
+}
+
+/* faq */
+.faq-container {
+    color: #000;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 1500px; /* Set a fixed width */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Center the container */
+    font-weight: bold;
+    margin: 100px auto; /* Add top margin to move down */
+}
+.faq-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.faq-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #000000;
+    margin: 20px 0;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-question {
+    font-size: 32px;
+    margin-left: 20px;
+}
+.faq-icon {
+    font-size: 32px;
+}
+
+/* Hamburger Menu Styles */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     padding: 5px;
 }
-
 .bar {
     width: 25px;
     height: 3px;
@@ -295,7 +314,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
-
 .dropdown a {
     display: block;
     padding: 10px 20px;
@@ -303,7 +321,6 @@ footer {
     text-align: left;
     transition: background 0.3s;
 }
-
 .dropdown a:hover {
     background-color: var(--main-color);
 }
@@ -316,7 +333,7 @@ footer {
     .hamburger {
         display: none;
     }
-
+    /* Adjust other tablet-specific styles here */
     .huge-text {
         font-size: 100px;
     }
@@ -333,7 +350,7 @@ footer {
     .hamburger {
         display: flex;
     }
-
+    /* Adjust other phone-specific styles here */
     .huge-text {
         font-size: 80px;
     }
