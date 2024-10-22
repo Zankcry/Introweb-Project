@@ -12,7 +12,7 @@ loginForm.addEventListener('submit', (e) => {
   if (storedUser && storedUser.email === emailInput.value && storedUser.password === passwordInput.value) {
     // If credentials are correct, set login state and redirect to home.html
     localStorage.setItem('isLoggedIn', 'true');
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
   } else {
     // If credentials are incorrect, show error message
     errorMessage.innerText = 'Invalid email or password';
