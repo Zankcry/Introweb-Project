@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="signup.js" defer></script>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+        <img src="images/icon.png">
+        <span class="logo-text">ANGELITEFIT</span>
+    </a>
+
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workoutprogress.html">Workout Progress</a></li>
+        <li><a href="workoutprogram.html">Workout Program</a></li>
+    </ul>
+    
+</header>
+<div class="main-content">
+  <div class="wrapper">
+    <img src="images/hau_logo.png" alt="signup_image" class="signup_image">
+    <h1>ANGELITE<span class="red">FIT</span></h1>
+    <p id="error-message" class="error-message"></p>
+    <form id="signup-form">
+      <div class="input-container">
+        <label for="firstname-input">
+          <img src="images/user-icon.svg" alt="User Icon" />
+        </label>
+        <input type="text" name="firstname" id="firstname-input" placeholder="Firstname" required>
+      </div>
+      <div class="input-container">
+        <label for="email-input">
+          <img src="images/envelope.svg" alt="Envelope Icon" />
+        </label>
+        <input type="email" name="email" id="email-input" placeholder="Email" required>
+      </div>
+      <div class="input-container">
+        <label for="password-input">
+          <img src="images/lock-icon.svg" alt="Lock Icon" />
+        </label>
+        <input type="password" name="password" id="password-input" placeholder="Password" required>
+      </div>
+      <div class="input-container">
+        <label for="repeat-password-input">
+          <img src="images/lock-icon.svg" alt="Lock Icon" />
+        </label>
+        <input type="password" name="repeat-password" id="repeat-password-input" placeholder="Repeat Password" required>
+      </div>
+      <button type="submit">Signup</button>
+    </form>
+    <footer>
+      <span class="border"><p>Already have an Account? <a href="login.html">Login</a></p></span>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
