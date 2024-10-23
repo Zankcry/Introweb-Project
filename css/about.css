@@ -314,37 +314,309 @@ footer {
     background-color: var(--main-color);
 }
 
-/* For tablets (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .navlist {
-        display: flex;
+/* Mobile specific styles for About page */
+@media (max-width: 768px) {
+    body {
+        background-color: var(--bg-color);
     }
-    .hamburger {
-        display: none;
+
+    /* Header adjustments */
+    header {
+        padding: 15px 5%;
+    }
+
+    .logo img {
+        width: 32px;
+    }
+
+    /* Hero section */
+    .bg {
+        height: auto;
+        background-position: center;
+    }
+
+    .huge-text-container {
+        position: relative;
+        top: 50px;
+        left: 0;
+        padding: 20px;
+        width: 100%;
     }
 
     .huge-text {
-        font-size: 100px;
-    }
-    .content {
         font-size: 32px;
+        line-height: 1.2;
+        text-align: left;
+    }
+
+    .sub-text {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+
+    .text {
+        font-size: 14px;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    /* Card section */
+    .card-container {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .card img {
+        width: 50px;
+    }
+
+    /* Contact section */
+    .parent-container {
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+    }
+
+    .container3 {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    .container3 h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .container3 p {
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .pic {
+        width: 100%;
+        max-width: 100%; /* Ensure the image scales with the container */
+        margin: 20px 0;
+        order: 2;
+    }
+    
+
+    /* Footer */
+    footer {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .logo1 img {
+        width: 80px;
+    }
+
+    .text1 {
+        width: 100%;
+        font-size: 14px;
+        margin-top: 70px;
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: flex;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    /* Dropdown */
+    .dropdown.active {
+        width: 200px;
+    }
+
+    /* Button */
+    .button {
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
     }
 }
 
-/* For phones (less than 769px) */
-@media (max-width: 768px) {
-    .navlist {
-        display: none;
+/* Additional enhancements for very small devices */
+@media (max-width: 320px) {
+    .huge-text {
+        font-size: 28px;
     }
-    .hamburger {
-        display: flex;
+
+    .card {
+        padding: 15px;
+    }
+
+    input, textarea {
+        padding: 12px;
+    }
+}
+
+/* Tablet specific styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header adjustments */
+    header {
+        padding: 20px 5%;
+    }
+
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    /* Hero section */
+    .bg {
+        height: 800px;
+    }
+
+    .huge-text-container {
+        top: 150px;
+        left: 5%;
+        width: 90%;
     }
 
     .huge-text {
-        font-size: 80px;
+        font-size: 48px;
     }
-    .content {
-        font-size: 28px;
+
+    .sub-text {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .text {
+        font-size: 16px;
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .button {
+        margin-top: 40px;
+        padding: 18px 35px;
+        font-size: 18px;
+    }
+
+    /* Card section */
+    .card-container {
+        padding: 600px 40px 40px;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+        padding: 30px;
+    }
+
+    .card img {
+        width: 75px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    /* Contact section */
+    .parent-container {
+        margin: 100px 40px;
+        gap: 40px;
+        margin-top: 35%;
+    }
+
+    .container3 {
         width: 100%;
+    }
+
+    .container3 h1 {
+        font-size: 32px;
+    }
+
+    .container3 p {
+        width: 150%;
+        font-size: 16px;
+    }
+
+    .input-container {
+        width: 90%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .pic {
+        width: 50%;
+        max-width: 100%; /* Ensure the image scales with the container */
+        margin: 20px 0;
+        margin-top: 175px;
+        order: 2;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 150px;
+    }
+
+    .logo1 img {
+        width: 100px;
+    }
+
+    .text1 {
+        width: 80%;
+        font-size: 18px;
+        margin-top: 75px;
+    }
+
+    /* Navigation */
+    .navlist {
+        top: 50px;
+        right: 5%;
+    }
+
+    .navlist a {
+        margin: 0 15px;
+        font-size: 14px;
+    }
+}
+
+/* Landscape tablets */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .bg {
+        height: 600px;
+    }
+
+    .huge-text-container {
+        top: 100px;
+    }
+
+    .card-container {
+        padding: 400px 40px 40px;
+    }
+
+    .pic {
+        margin-left: -150px;
     }
 }

@@ -344,18 +344,290 @@ footer {
 
 /* For phones (less than 769px) */
 @media (max-width: 768px) {
+    /* Navigation */
     .navlist {
         display: none;
     }
+    
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 5px;
+    }
+    
+    /* Layout adjustments */
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    
+    .left-panel, .right-panel {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    /* Tabs adjustment */
+    .right-panel .tabs {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .right-panel .tabs div {
+        min-width: 80px;
+        text-align: center;
+        flex-shrink: 0;
+    }
+    
+    /* Workout cards */
+    .right-panel .workout {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .right-panel .workout img {
+        margin: 0 auto 15px auto;
+    }
+    
+    /* FAQ section */
+    .faq-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+    
+    .faq-question {
+        font-size: 18px;
+    }
+    
+    /* Contact section */
+    .parent-container {
+        flex-direction: column;
+        margin: 60px 20px;
+    }
+    
+    .container3 {
+        width: 100%;
+    }
+    
+    .pic {
+        width: 100%;
+        max-width: 100%; /* Ensure the image scales with the container */
+        margin: 20px 0;
+        order: 2;
+    }
+    
+    .input-container {
+        width: 100%;
+    }
+    
+    input, textarea {
+        width: 100%;
+    }
+    
+    /* Footer adjustments */
+    .text1 {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 80px;
+    }
+    
+    /* Header adjustments */
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
+    /* Dropdown menu for mobile */
+    .dropdown {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--bg-color);
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .dropdown.active {
+        display: block;
+    }
+    
+    .dropdown a {
+        padding: 12px 20px;
+        display: block;
+        color: var(--text-color);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .dropdown a:last-child {
+        border-bottom: none;
+    }
+
+}
+
+/* Small phones optimization */
+@media (max-width: 360px) {
+    .faq-question {
+        font-size: 16px;
+    }
+    
+    .right-panel .tabs div {
+        min-width: 70px;
+        padding: 8px 12px;
+    }
+    
+    .container3 h1 {
+        font-size: 32px;
+    }
+}
+
+/* For tablets (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    /* Navigation */
+    .navlist {
+        display: none;
+    }
+    
     .hamburger {
         display: flex;
     }
-    /* Adjust other phone-specific styles here */
-    .huge-text {
-        font-size: 80px;
+    
+    /* Layout adjustments */
+    .container {
+        flex-direction: column;
+        margin-top: 60px;
     }
-    .content {
-        font-size: 28px;
+    
+    .left-panel, .right-panel {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Text size adjustments */
+    .left-panel p {
+        font-size: 24px; /* Increased text size */
+    }
+
+    .right-panel h1 {
+        font-size: 36px; /* Larger heading */
+    }
+
+    .right-panel p {
+        font-size: 24px; /* Increased text size */
+    }
+
+    .right-panel .workout .details h3 {
+        font-size: 28px; /* Larger workout titles */
+    }
+
+    .right-panel .workout .details p {
+        font-size: 22px; /* Larger workout descriptions */
+    }
+    
+    /* Tabs adjustment */
+    .right-panel .tabs {
+        overflow-x: auto;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+    
+    .right-panel .tabs div {
+        min-width: 119px; /* Slightly wider tabs */
+        text-align: center;
+        flex-shrink: 0;
+        font-size: 22px; /* Larger tab text */
+        padding: 12px 24px;
+    }
+    
+    /* Workout cards */
+    .right-panel .workout {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .right-panel .workout img {
+        margin: 0 auto 15px auto;
+        width: 150px; /* Larger workout images */
+    }
+    
+    /* FAQ section */
+    .faq-container {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .faq-title {
+        font-size: 36px; /* Larger FAQ title */
+    }
+    
+    .faq-question {
+        font-size: 28px; /* Larger FAQ questions */
+    }
+
+    .faq-icon {
+        font-size: 28px; /* Larger FAQ icons */
+    }
+    
+    /* Contact section */
+    .parent-container {
+        flex-direction: column;
+        margin: 80px 40px;
+    }
+    
+    .container3 {
         width: 100%;
     }
-}
+
+    .container3 h1 {
+        font-size: 48px; /* Larger contact heading */
+    }
+
+    .container3 p {
+        font-size: 26px; /* Larger contact text */
+        line-height: 1.6;
+    }
+    
+    .pic {
+        width: 80%;
+        max-width: 80%;
+        margin: 30px auto;
+        order: 2;
+    }
+    
+    .input-container {
+        width: 100%;
+    }
+    
+    input, textarea {
+        width: 100%;
+        font-size: 22px; /* Larger input text */
+        padding: 28px; /* Larger input padding */
+    }
+    
+    /* Footer adjustments */
+    .text1 {
+        width: 80%;
+        font-size: 26px; /* Larger footer text */
+        margin-top: 80px;
+        line-height: 1.7;
+    }
+    
+    /* Header adjustments */
+    .logo img {
+        width: 70px; /* Larger logo */
+        margin-right: 20px;
+    }
+    
+    .logo-text {
+        font-size: 1.8rem; /* Larger logo text */
+    }
+    
+    /* Dropdown menu for tablet */

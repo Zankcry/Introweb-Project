@@ -344,37 +344,575 @@ footer {
     background-color: var(--main-color);
 }
 
-/* For tablets (769px to 1024px) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .navlist {
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    /* Free Workout Programs Section */
+    .container {
+        margin-top: 30%;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .programs {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .program {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .program img {
+        height: auto;
+    }
+
+    .program-title {
+        font-size: 32px;
+    }
+
+    /* Program Categories Sections */
+    .container1 {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .people-tried {
+        font-size: 16px;
+        padding: 12px 15px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    /* Carousel Adjustments */
+    .carousel {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 500px;
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+
+    .carousel-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .carousel-item .info {
+        width: 80%;
+        bottom: 20px;
+    }
+
+    .info .details {
+        font-size: 14px;
+    }
+
+    .info .title {
+        font-size: 16px;
+    }
+
+    .arrow {
+        display: none; /* Hide arrows on mobile */
+    }
+
+    /* Contact Section */
+    .parent-container {
+        flex-direction: column;
+        margin: 100px 15px 0 15px;
+        align-items: center;
+    }
+
+    .container3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container3 h1 {
+        font-size: 32px;
+    }
+
+    .container3 p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .pic {
+        display: none; /* Hide the image on mobile */
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .logo1 img {
+        width: 100px;
+    }
+
+    .text1 {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
         display: flex;
     }
-    .hamburger {
+
+    .navlist {
         display: none;
     }
-    /* Adjust other tablet-specific styles here */
-    .huge-text {
-        font-size: 100px;
+
+    /* Show dropdown when active */
+    .dropdown.active {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
     }
-    .content {
-        font-size: 32px;
+
+    .dropdown a {
+        padding: 15px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown a:last-child {
+        border-bottom: none;
     }
 }
 
-/* For phones (less than 769px) */
 @media (max-width: 768px) {
-    .navlist {
-        display: none;
+    /* Header & Navigation */
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
     }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    /* Free Workout Programs Section */
+    .container {
+        margin-top: 30%;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .programs {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .program {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .program img {
+        height: auto;
+    }
+
+    .program-title {
+        font-size: 32px;
+    }
+
+    /* Program Categories Sections */
+    .container1 {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .people-tried {
+        font-size: 16px;
+        padding: 12px 15px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    /* Carousel Adjustments */
+    .carousel {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 500px;
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+
+    .carousel-item {
+        margin: 0;
+        width: 100%;
+    }
+
+    .carousel-item .info {
+        width: 80%;
+        bottom: 20px;
+    }
+
+    .info .details {
+        font-size: 14px;
+    }
+
+    .info .title {
+        font-size: 16px;
+    }
+
+    .arrow {
+        display: none; /* Hide arrows on mobile */
+    }
+
+    /* Contact Section */
+    .parent-container {
+        flex-direction: column;
+        margin: 100px 15px 0 15px;
+        align-items: center;
+    }
+
+    .container3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container3 h1 {
+        font-size: 32px;
+    }
+
+    .container3 p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .pic {
+        display: none; /* Hide the image on mobile */
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .logo1 img {
+        width: 100px;
+    }
+
+    .text1 {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    /* Hamburger Menu */
     .hamburger {
         display: flex;
     }
-    /* Adjust other phone-specific styles here */
-    .huge-text {
-        font-size: 80px;
+
+    .navlist {
+        display: none;
     }
-    .content {
-        font-size: 28px;
+
+    /* Show dropdown when active */
+    .dropdown.active {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropdown a {
+        padding: 15px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header & Navigation */
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    /* Free Workout Programs Section */
+    .container {
+        margin-top: 30%;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .programs {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .program {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .program img {
+        height: auto;
+    }
+
+    .program-title {
+        font-size: 32px;
+    }
+
+    /* Program Categories Sections */
+    .container1 {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .people-tried {
+        font-size: 16px;
+        padding: 12px 15px;
+        display: block;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    /* Carousel Adjustments */
+    .carousel {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 500px;
+        border-radius: 30px;
+        margin-top: 15px;
+    }
+
+    .carousel-item {
+        margin: 0;
         width: 100%;
     }
+
+    .carousel-item .info {
+        width: 80%;
+        bottom: 20px;
+    }
+
+    .info .details {
+        font-size: 14px;
+    }
+
+    .info .title {
+        font-size: 16px;
+    }
+
+    .arrow {
+        display: none; /* Hide arrows on mobile */
+    }
+
+    /* Contact Section */
+    .parent-container {
+        flex-direction: column;
+        margin: 100px 15px 0 15px;
+        align-items: center;
+    }
+
+    .container3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container3 h1 {
+        font-size: 32px;
+    }
+
+    .container3 p {
+        width: 100%;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .pic {
+        display: none; /* Hide the image on mobile */
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .logo1 img {
+        width: 100px;
+    }
+
+    .text1 {
+        width: 90%;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    /* Show dropdown when active */
+    .dropdown.active {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropdown a {
+        padding: 15px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .dropdown a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Additional tweaks for very small devices */
+@media (max-width: 380px) {
+    .logo-text {
+        font-size: 1rem;
+    }
+
+    .program-title {
+        font-size: 28px;
+    }
+
+    .carousel img {
+        height: 400px;
+    }
+
+    .container3 h1 {
+        font-size: 28px;
+    }
+
+    .text1 {
+        font-size: 16px;
+    }
+
 }
