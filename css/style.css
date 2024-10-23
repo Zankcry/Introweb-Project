@@ -112,6 +112,10 @@ p {
   margin-bottom: 20px;
 }
 
+.input-container img {
+  filter: brightness(0) invert(1);
+}
+
 input {
   width: 100%;
   padding: 15px;
@@ -122,6 +126,7 @@ input {
   transition: all 0.3s ease;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 input:focus {
   border-color: #1E90FF;
@@ -321,6 +326,11 @@ footer a {
 
   .input-container {
       margin-bottom: 15px;
+  }
+
+  .input-container img {
+    background-color: lightblue; /* Set your desired background color */
+  
   }
 
   input {
