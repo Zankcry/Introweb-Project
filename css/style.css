@@ -113,7 +113,19 @@ p {
 }
 
 .input-container img {
-  filter: brightness(0) invert(1);
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: auto;
+}
+
+.input-container input {
+  padding-left: 40px;
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
 }
 
 input {
@@ -167,7 +179,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 28px;
-  margin: 0 auto;  /* This helps center the container itself */
+  margin: 0 auto;
   margin-bottom: 20px;
   color: #00ccff;
 }
@@ -257,10 +269,10 @@ footer a {
 
   footer {
     display: flex;
-    justify-content: center; /* Aligns items to the right */
+    justify-content: center;
   }
   .login {
-    margin-left: 16px;
+    margin-left: 110px;
   }
 }
 
@@ -328,10 +340,6 @@ footer a {
       margin-bottom: 15px;
   }
 
-  .input-container img {
-    background-color: lightblue; /* Set your desired background color */
-  
-  }
 
   input {
       padding: 10px;
@@ -354,17 +362,17 @@ footer a {
     justify-content: center;
     align-items: center;
     gap: 28px;
-    margin: 0 auto;  /* This helps center the container itself */
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
   footer {
     display: flex;
-    justify-content: center; /* Aligns items to the right */
+    justify-content: center;
   }
 
   .login {
-    margin-right: 20px;
+    margin-right: 119px;
   }
 }
 

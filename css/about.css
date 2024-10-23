@@ -237,6 +237,11 @@ section {
     margin: 20px 0;
     width: 75%;
 }
+
+.input-container img {
+    filter: brightness(0) invert(1);
+}
+
 input, textarea {
     font-family: "Outfit", sans-serif;
     width: 70%;
@@ -414,7 +419,7 @@ footer {
 
     .pic {
         width: 100%;
-        max-width: 100%; /* Ensure the image scales with the container */
+        max-width: 100%;
         margin: 20px 0;
         order: 2;
     }

@@ -258,11 +258,11 @@ footer {
     background-color: #ffffff;
     border-radius: 20px;
     padding: 20px;
-    width: 1500px; /* Set a fixed width */
+    width: 1500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto; /* Center the container */
+    margin: 0 auto;
     font-weight: bold;
-    margin: 100px auto; /* Add top margin to move down */
+    margin: 100px auto;
 }
 .faq-title {
     font-size: 32px;
@@ -333,7 +333,6 @@ footer {
     .hamburger {
         display: none;
     }
-    /* Adjust other tablet-specific styles here */
     .huge-text {
         font-size: 100px;
     }
@@ -413,7 +412,7 @@ footer {
     
     .pic {
         width: 100%;
-        max-width: 100%; /* Ensure the image scales with the container */
+        max-width: 100%;
         margin: 20px 0;
         order: 2;
     }
@@ -512,23 +511,23 @@ footer {
 
     /* Text size adjustments */
     .left-panel p {
-        font-size: 24px; /* Increased text size */
+        font-size: 24px;
     }
 
     .right-panel h1 {
-        font-size: 36px; /* Larger heading */
+        font-size: 36px;
     }
 
     .right-panel p {
-        font-size: 24px; /* Increased text size */
+        font-size: 24px;
     }
 
     .right-panel .workout .details h3 {
-        font-size: 28px; /* Larger workout titles */
+        font-size: 28px;
     }
 
     .right-panel .workout .details p {
-        font-size: 22px; /* Larger workout descriptions */
+        font-size: 22px;
     }
     
     /* Tabs adjustment */
@@ -540,10 +539,10 @@ footer {
     }
     
     .right-panel .tabs div {
-        min-width: 119px; /* Slightly wider tabs */
+        min-width: 119px;
         text-align: center;
         flex-shrink: 0;
-        font-size: 22px; /* Larger tab text */
+        font-size: 22px;
         padding: 12px 24px;
     }
     
@@ -555,7 +554,7 @@ footer {
     
     .right-panel .workout img {
         margin: 0 auto 15px auto;
-        width: 150px; /* Larger workout images */
+        width: 150px;
     }
     
     /* FAQ section */
@@ -565,15 +564,15 @@ footer {
     }
 
     .faq-title {
-        font-size: 36px; /* Larger FAQ title */
+        font-size: 36px;
     }
     
     .faq-question {
-        font-size: 28px; /* Larger FAQ questions */
+        font-size: 28px;
     }
 
     .faq-icon {
-        font-size: 28px; /* Larger FAQ icons */
+        font-size: 28px;
     }
     
     /* Contact section */
@@ -587,11 +586,11 @@ footer {
     }
 
     .container3 h1 {
-        font-size: 48px; /* Larger contact heading */
+        font-size: 48px;
     }
 
     .container3 p {
-        font-size: 26px; /* Larger contact text */
+        font-size: 26px;
         line-height: 1.6;
     }
     
@@ -608,25 +607,25 @@ footer {
     
     input, textarea {
         width: 100%;
-        font-size: 22px; /* Larger input text */
-        padding: 28px; /* Larger input padding */
+        font-size: 22px;
+        padding: 28px;
     }
     
     /* Footer adjustments */
     .text1 {
         width: 80%;
-        font-size: 26px; /* Larger footer text */
+        font-size: 26px;
         margin-top: 80px;
         line-height: 1.7;
     }
     
     /* Header adjustments */
     .logo img {
-        width: 70px; /* Larger logo */
+        width: 70px;
         margin-right: 20px;
     }
     
     .logo-text {
-        font-size: 1.8rem; /* Larger logo text */
+        font-size: 1.8rem;
     }
 }

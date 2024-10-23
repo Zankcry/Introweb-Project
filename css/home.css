@@ -402,7 +402,6 @@ footer {
         display: block;
     }
 
-    /* Additional mobile optimizations */
     section {
         padding: 0;
     }
@@ -411,12 +410,10 @@ footer {
         -webkit-tap-highlight-color: transparent;
     }
 
-    /* Ensure smooth scrolling */
     html {
         scroll-behavior: smooth;
     }
 
-    /* Improve touch targets */
     a, button {
         min-height: 44px;
         min-width: 44px;
@@ -453,7 +450,6 @@ footer {
     }
 }
 
-/* Ensure proper display of hamburger menu */
 .hamburger.active .bar:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
 }
@@ -580,34 +576,29 @@ footer {
         padding: 0 8%;
     }
 
-    /* Ensure proper spacing */
     .container1 {
         margin-top: 40px;
     }
 
-    /* Additional tablet optimizations */
     * {
         -webkit-tap-highlight-color: transparent;
     }
 
-    /* Improve touch targets while maintaining layout */
     a, button {
         min-height: 40px;
         min-width: 40px;
         padding: 8px;
     }
 
-    /* Specific tablet adjustments */
+
     .huge-text-container {
         width: 80%;
     }
 
-    /* Better spacing for tablet screens */
     .item {
         margin: 0 10px;
     }
 
-    /* Optimize images for tablet resolution */
     img {
         max-width: 100%;
         height: auto;
