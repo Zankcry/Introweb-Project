@@ -155,61 +155,205 @@ button:hover {
   text-align: center;
 }
 
-@media only screen and (max-width: 375px) and (max-height: 812px) {
+/* Tablet Viewport */
+@media (max-width: 1024px) {
+  header {
+      padding: 20px 3%;
+  }
+
+  .logo img {
+      width: 60px;
+      margin-right: 20px;
+  }
+
+  .logo-text {
+      font-size: 1.3rem;
+  }
+
+  .navlist {
+      top: 50px;
+      right: 4%;
+  }
+
+  .navlist a {
+      margin: 0 15px;
+      font-size: 0.9rem;
+  }
+
+  .main-content {
+      padding-top: 60px;
+  }
+
   .wrapper {
-    padding: 20px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  button {
-    font-size: 16px;
+      padding: 30px;
+      max-width: 350px;
   }
 
   .signup_image {
-    width: 80px;
-    height: 80px;
-  }
-}
-
-@media only screen and (max-width: 1024px) and (max-height: 832px) {
-  .wrapper {
-    padding: 40px;
+      width: 90px;
+      height: 90px;
   }
 
   h1 {
-    font-size: 30px;
+      font-size: 24px;
+  }
+
+  input {
+      padding: 12px;
+      padding-left: 45px;
+      font-size: 14px;
   }
 
   button {
-    font-size: 18px;
+      padding: 12px 0;
+      font-size: 16px;
+  }
+
+  .social-icons {
+      gap: 20px;
+  }
+
+  .social-icon {
+      font-size: 18px;
+      color: #00ccff;
+  }
+
+  footer a {
+      margin-left: 60px;
+      color: #00ccff;
+      text-decoration: none;
+  }
+}
+
+/* Mobile Viewport */
+@media (max-width: 768px) {
+  body {
+      padding: 10px;
+  }
+
+  header {
+      padding: 15px 3%;
+  }
+
+  .logo img {
+      width: 50px;
+      margin-right: 15px;
+  }
+
+  .logo-text {
+      font-size: 1.2rem;
+  }
+
+  .navlist {
+      position: fixed;
+      top: 70px;
+      right: -100%;
+      width: 200px;
+      height: auto;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      flex-direction: column;
+      transition: 0.3s;
+  }
+
+  .navlist.active {
+      right: 20px;
+  }
+
+  .navlist a {
+      margin: 15px 0;
+      font-size: 1rem;
+  }
+
+  .main-content {
+      padding-top: 40px;
+  }
+
+  .wrapper {
+      padding: 20px;
+      max-width: 300px;
   }
 
   .signup_image {
-    width: 100px;
-    height: 100px;
+      width: 80px;
+      height: 80px;
+  }
+
+  h1 {
+      font-size: 22px;
+      margin-bottom: 15px;
+  }
+
+  .input-container {
+      margin-bottom: 15px;
+  }
+
+  input {
+      padding: 10px;
+      padding-left: 40px;
+      font-size: 14px;
+  }
+
+  button {
+      padding: 10px 0;
+      font-size: 16px;
+      margin: 8px 0;
+  }
+
+  .border {
+      padding-bottom: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 0 auto;  /* This helps center the container itself */
+    margin-bottom: 20px;
+}
+
+  footer a {
+      margin-left: 55px;
+      font-size: 14px;
   }
 }
 
-.social-login {
-  text-align: center;
-}
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
+/* Extra Small Devices */
+@media (max-width: 375px) {
+  .wrapper {
+      padding: 15px;
+      max-width: 280px;
+  }
 
+  .signup_image {
+      width: 70px;
+      height: 70px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  input {
+    padding: 8px;
+    padding-left: 35px;
+    font-size: 12px;
 }
+
+button {
+    padding: 8px 0;
+    font-size: 14px;
+    margin: 6px 0;
+}
+
 .social-icon {
-  font-size: 20px;
-  color: #00ccff;
-  margin-bottom: 20px;
+    font-size: 14px;
 }
 
 footer a {
-  margin-left: 82px;
-  text-decoration: none;
-  color: #00ccff;
+    margin-left: 20px;
+    font-size: 12px;
+}
 }

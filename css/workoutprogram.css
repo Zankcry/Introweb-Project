@@ -481,7 +481,10 @@ footer {
     }
 
     .pic {
-        display: none; /* Hide the image on mobile */
+        max-width: 40%; 
+        height: auto;
+        margin-left: -400px;
+        margin-top: 180px;
     }
 
     /* Footer */
@@ -664,7 +667,7 @@ footer {
     }
 
     .pic {
-        display: none; /* Hide the image on mobile */
+       
     }
 
     /* Footer */
@@ -847,9 +850,10 @@ footer {
     }
 
     .pic {
-        display: none; /* Hide the image on mobile */
+        max-width: 80%;
+        margin: 20px auto;  /* Center the image */
+        display: block;     /* Show the image */
     }
-
     /* Footer */
     footer {
         margin-top: 100px;
@@ -893,26 +897,215 @@ footer {
     }
 }
 
-/* Additional tweaks for very small devices */
-@media (max-width: 380px) {
+@media (max-width: 1024px) { /* Tablet viewport */
+    /* Header & Navigation */
+    .logo img {
+        width: 60px;
+        margin-right: 20px;
+    }
+
     .logo-text {
-        font-size: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .navlist {
+        right: 4%;
+    }
+
+    .navlist a {
+        margin: 0 15px;
+    }
+
+    /* Main containers */
+    .container {
+        margin-top: 25%;
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .programs {
+        gap: 30px;
+    }
+
+    .program {
+        width: 280px;
     }
 
     .program-title {
-        font-size: 28px;
+        font-size: 36px;
+    }
+
+    /* Program Categories */
+    .container1 {
+        margin-top: 100px;
+    }
+
+    .title {
+        font-size: 36px;
+        margin-bottom: 25px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        width: 90%;
     }
 
     .carousel img {
-        height: 400px;
+        width: 400px;
+        height: 600px;
+    }
+
+    /* Contact Section */
+    .parent-container {
+        margin-left: 50px;
+        margin-top: 200px;
+    }
+
+    .container3 {
+        width: 85%;
     }
 
     .container3 h1 {
-        font-size: 28px;
+        font-size: 36px;
+    }
+
+    .pic {
+        max-width: 45%;
+        margin-left: -335px;
+        margin-top: 250px;
+    }
+
+    /* Footer */
+    .text1 {
+        width: 75%;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 768px) { /* Mobile viewport */
+    /* Header & Navigation */
+    .logo img {
+        width: 50px;
+        margin-right: 15px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    .navlist {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Main containers */
+    .container {
+        margin-top: 30%;
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .programs {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .program {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .program-title {
+        font-size: 32px;
+    }
+
+    /* Program Categories */
+    .container1 {
+        margin-top: 50px;
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .carousel-item .info {
+        width: 80%;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    /* Contact Section */
+    .parent-container {
+        flex-direction: column;
+        margin: 100px 15px 0 15px;
+        align-items: center;
+    }
+
+    .container3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container3 h1 {
+        font-size: 32px;
+    }
+
+    .container3 p {
+        width: 100%;
+        font-size:  18px;
+    }
+
+    .pic {
+        max-width: 40%; 
+        height: auto;
+        margin-left: -400px;  /* This large negative margin could push it off-screen */
+        margin-top: 180px;
+    }
+
+    /* Footer */
+    footer {
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .logo1 img {
+        width: 100px;
     }
 
     .text1 {
-        font-size: 16px;
+        width: 90%;
+        font-size: 18px;
     }
-
 }
